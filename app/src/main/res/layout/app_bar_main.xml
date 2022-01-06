@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.MainActivity">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:id="@+id/postproperty"
+                android:padding="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/propertybtnbg"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#fff"
+                    android:text="Post Property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/ic_free"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+    <ScrollView
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:id="@+id/serchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="3dp"
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+
+
+<!--            <pl.droidsonroids.gif.GifTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/gif2"-->
+<!--                />-->
+
+
+            <TextView
+                android:background="@drawable/border_background"
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableRight="@drawable/searchicon"
+                android:drawableTint="@color/gray"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:hint="Buy Properties, City, Locality" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:layout_marginTop="-15dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_property_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen150dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/slider1"
+                android:layout_below="@id/serchbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/sliderproject"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/slider1"
+                android:id="@+id/post_property"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp">
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:background="@drawable/border_background"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/post1" />-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/border_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/post_property" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/slider2"
+                android:layout_below="@id/post_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/linev"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Sell Property"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:background="@drawable/mainhome_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:id="@+id/sellviewmore"
+                        android:text="View More"
+                        android:textSize="12sp"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"/>
+                </LinearLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sellproperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/slider22"
+                android:layout_below="@id/slider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/linev"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Advertisement"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/advertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"/>
+
+
+            </LinearLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/slider22"
+                android:id="@+id/post_pro"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:background="@drawable/border_background"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/post_pro" />-->
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border_background"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/post1" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="0dp"-->
+                    <!--                    android:background="@drawable/border_background"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/make_your_deal_faster" />-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/slider3"
+                android:layout_below="@id/post_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/linev"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:text="Rent Property"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:background="@drawable/mainhome_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:id="@+id/rentviewmore"
+                        android:text="View More"
+                        android:textSize="12sp"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rentproperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/slider3"
+                android:id="@+id/make"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:background="@drawable/border_background"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/make_your_deal_faster" />-->
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border_background"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/make1" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="0dp"-->
+                    <!--                    android:background="@drawable/border_background"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/make_your_deal_faster" />-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/slider4"
+                android:layout_below="@id/make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/linev"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:text="Paying Guest Property"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:background="@drawable/mainhome_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:id="@+id/pgviewmore"
+                        android:text="View More"
+                        android:textSize="12sp"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pgproperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/slider4"
+                android:id="@+id/view1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:paddingTop="10dp"
+                android:layout_below="@+id/view1"
+                android:id="@+id/why"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:background="@drawable/border_background"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/why_trust" />-->
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border_background"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/why1" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="0dp"-->
+                    <!--                    android:background="@drawable/border_background"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/make_your_deal_faster" />-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_below="@+id/why"
+                android:id="@+id/view2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_below="@+id/view2"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/mainhome_btn_bg"
+                android:id="@+id/btnbuyservice"
+                android:text="Buy Our Services"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+
+            <View
+                android:layout_below="@+id/btnbuyservice"
+                android:id="@+id/view3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:paddingTop="10dp"
+                android:layout_below="@+id/view3"
+                android:id="@+id/feelfree"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:background="@drawable/border_background"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/feel_free" />-->
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border_background"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/help1" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="0dp"-->
+                    <!--                    android:background="@drawable/border_background"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/make_your_deal_faster" />-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <include
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
