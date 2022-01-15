@@ -3,7 +3,7 @@ package com.nine_square.property.Utils;
 public class SmsData {
 
     String atthe = "@";
-    String url = "www.9squareproperty.com/contact";
+    String url = "www.nestingindia.com/contact";
 
 
     public String Username = "shailendramahanande";
@@ -13,7 +13,7 @@ public class SmsData {
     public String dltheaderid = "1505161285152442705";
     public String dlttempid = "1507162065221907548";
     public String subject = "Otp Of 9 Square Property";
-    public String message = "Dear user, 9 Square Property verification OTP code is ";
+    public String message = "Dear user, Nesting India verification OTP code is ";
 //    public String message2= ". Please DO NOT share this OTP with anyone. Contact for any query @\n" +"www.nestingindia.com/contact";
     public String message2= ". Please DO NOT share this OTP with anyone. Contact for any query " + atthe+" "+url;
 

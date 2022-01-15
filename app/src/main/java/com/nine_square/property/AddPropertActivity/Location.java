@@ -169,10 +169,14 @@ public class Location extends AppCompatActivity {
                     showmessage("Please Select Locality");
                 }
 
-
-                else if(VolleySingleton.getInstance(getApplicationContext()).getsearchaddress().isEmpty()){
-                    showmessage("Please Pick Address");
+                else if(addressG.isEmpty()){
+                    showmessage("Please enter address");
                 }
+
+
+                /*else if(VolleySingleton.getInstance(getApplicationContext()).getsearchaddress().isEmpty()){
+                    showmessage("Please Pick Address");
+                }*/
                 else if(localityG.equals("Add Location")){
                     String otherlocalityG;
                     otherlocalityG = otherlocality.getText().toString().trim();

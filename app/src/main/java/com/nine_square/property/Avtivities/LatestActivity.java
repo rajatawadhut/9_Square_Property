@@ -2078,8 +2078,8 @@ public class LatestActivity extends AppCompatActivity {
         super.onResume();
 
         nav.getMenu().getItem(1).setChecked(true);
-        footerl.setColorFilter(getResources().getColor(R.color.green1), PorterDuff.Mode.SRC_IN);
-        latestfooter1.setTextColor(Color.parseColor("#25C52D"));
+        footerl.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
+        latestfooter1.setTextColor(Color.parseColor("#CA7441"));
 
 //        footerh.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);

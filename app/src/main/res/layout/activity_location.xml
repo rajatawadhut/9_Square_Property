@@ -97,7 +97,7 @@
 
 
                 <EditText
-                    android:visibility="gone"
+                    android:visibility="visible"
                     android:layout_margin="8dp"
                     android:inputType="textCapSentences|textMultiLine"
                     android:singleLine="true"
@@ -109,6 +109,7 @@
 
 
             <Button
+                android:visibility="gone"
                 android:textAllCaps="false"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"

@@ -218,7 +218,8 @@ public class PropertyProfileInfo extends AppCompatActivity {
         image = ListingData.getInstance(getApplicationContext()).getimage();
         imagepresent = ListingData.getInstance(getApplicationContext()).getimagepresent();
         getrera = ListingData.getInstance(getApplicationContext()).getrera();
-        getlatlong = ListingData.getInstance(getApplicationContext()).getLatLog();
+        getlatlong = "";
+//        getlatlong = ListingData.getInstance(getApplicationContext()).getLatLog();
         getsubscription = ListingData.getInstance(getApplicationContext()).getsubscription();
 
 

@@ -6730,11 +6730,11 @@ public class MainActivity extends AppCompatActivity {
 
         // to check current activity in the navigation drawer
         nav.getMenu().getItem(0).setChecked(true);
-        footerh.setColorFilter(getResources().getColor(R.color.green1), PorterDuff.Mode.SRC_IN);
+        footerh.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
 //        footerl.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footershort.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
-        homeefooter1.setTextColor(Color.parseColor("#25C52D"));
+        homeefooter1.setTextColor(Color.parseColor("#CA7441"));
 //        latestfooter1.setTextColor(R.string.CodeColor);
 //        settingfooter1.setTextColor(R.string.CodeColor);
 //        shortlistedfooter1.setTextColor(R.string.CodeColor);
