@@ -3,6 +3,7 @@ package com.nine_square.property.Avtivities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -154,7 +155,7 @@ public class ShowUSerList extends AppCompatActivity {
         latestDataModels = new ArrayList<>();
 
 
-        layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        layoutManager = new GridLayoutManager(this, 2);
         recyclerviewsearch.setLayoutManager(layoutManager);
         latestAdapter = new LatestAdapter(latestDataModels,this);
         recyclerviewsearch.setAdapter(latestAdapter);
@@ -1258,7 +1259,7 @@ public class ShowUSerList extends AppCompatActivity {
                             }
 
                             if(lasttimespinget.contains("10")){
-                                lasttimespinget = "24/7";
+                                lasttimespinget = "24 x 7";
                             }
 
 
@@ -1496,7 +1497,7 @@ public class ShowUSerList extends AppCompatActivity {
                             byersitem = object.getString("byersitem");
 
                             if (byersitem.contains("1")) {
-                                byersitem1.add("24/7 Water");
+                                byersitem1.add("24 x 7 Water");
                             }
                             if (byersitem.contains("2")) {
                                 byersitem1.add("Visiter Parking Available");

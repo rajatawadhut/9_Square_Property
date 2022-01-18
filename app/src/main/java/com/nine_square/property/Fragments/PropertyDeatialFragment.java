@@ -762,7 +762,8 @@ public class PropertyDeatialFragment extends Fragment {
             widthfacingunit.setText("");
         }else{
             widthfaceing.setText(widthfacingget);
-            widthfacingunit.setText(unitspinget);
+//            widthfacingunit.setText(unitspinget);
+            widthfacingunit.setText("Meter");
         }
 //        brokerageprice.setText();
 
@@ -2830,7 +2831,7 @@ public class PropertyDeatialFragment extends Fragment {
                             }
 
                             if(lasttimespinget.contains("10")){
-                                lasttimespinget = "24/7";
+                                lasttimespinget = "24 x 7";
                             }
 
 
@@ -3069,7 +3070,7 @@ public class PropertyDeatialFragment extends Fragment {
                             byersitem = object.getString("byersitem");
 
                             if (byersitem.contains("1")) {
-                                byersitem1.add("24/7 Water");
+                                byersitem1.add("24 x 7 Water");
                             }
                             if (byersitem.contains("2")) {
                                 byersitem1.add("Visiter Parking Available");

@@ -1122,12 +1122,12 @@ public class Features extends AppCompatActivity {
         if(ListingData.getInstance(getApplicationContext()).byersitem() != null) {
 
 
-            if (byersitemget.contains("24/7 Water")) {
-                byersitem.add("24/7 Water");
+            if (byersitemget.contains("24 x 7 Water")) {
+                byersitem.add("24 x 7 Water");
                 water24.setChecked(true);
 
             } else {
-                byersitem.remove("24/7 Water");
+                byersitem.remove("24 x 7 Water");
                 water24.setChecked(false);
 
             }
@@ -1953,9 +1953,9 @@ public class Features extends AppCompatActivity {
 
             case R.id.water24:
                 if (checked) {
-                    byersitem.add("24/7 Water");
+                    byersitem.add("24 x 7 Water");
                 } else {
-                    byersitem.remove("24/7 Water");
+                    byersitem.remove("24 x 7 Water");
                 }
                 break;
 

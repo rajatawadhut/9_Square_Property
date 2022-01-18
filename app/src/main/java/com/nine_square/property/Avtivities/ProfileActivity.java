@@ -87,11 +87,6 @@ public class ProfileActivity extends AppCompatActivity {
 
     ArrayList<Uri>  bitmaps = new ArrayList<Uri>();
 
-
-
-
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

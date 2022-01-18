@@ -5,7 +5,7 @@ public class UtilsforMail {
 
         //This is your from email
 //        public static final String EMAIL = "sharmsnancy@gmail.com";
-        public static final String EMAIL = "9squareproperty@gmail.com";
+        public static final String EMAIL = "9ninesquareproperty@gmail.com";
 
         //This is your from email password
 //        public static final String PASSWORD = "Nancy123";

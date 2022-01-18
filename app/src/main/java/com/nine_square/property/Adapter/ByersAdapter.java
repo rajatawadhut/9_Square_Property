@@ -35,7 +35,7 @@ public class ByersAdapter extends RecyclerView.Adapter<ByersAdapter.ShowData>{
 
     @Override
     public void onBindViewHolder(@NonNull final ShowData holder, final int position) {
-        holder.text.setText(dataSet.get(position).getText());
+        holder.text.setText(dataSet.get(position).getText().trim());
     }
 
     @Override

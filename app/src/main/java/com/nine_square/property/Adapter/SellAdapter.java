@@ -49,8 +49,15 @@ public class SellAdapter extends RecyclerView.Adapter<SellAdapter.ShowData>{
     @NonNull
     @Override
     public ShowData onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.land12, parent, false);
-        return new ShowData(view);
+//        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.land12, parent, false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View itemView = inflater.inflate(R.layout.land12, parent, false);
+
+        ViewGroup.LayoutParams layoutParams = itemView.getLayoutParams();
+        layoutParams.width = (int) (parent.getWidth() * 0.93);
+        itemView.setLayoutParams(layoutParams);
+
+        return new ShowData(itemView);
     }
 
     @Override
@@ -121,7 +128,7 @@ public class SellAdapter extends RecyclerView.Adapter<SellAdapter.ShowData>{
         }        holder.listingfor.setText(dataSet.get(position).getPropertylistfor());
 
 
-        holder.usertype.setText(dataSet.get(position).getUsertype());
+        holder.usertype.setText(dataSet.get(position).getUsertype()+ " - ");
 
         DateConvert dateConvert = new DateConvert(dataSet.get(position).getReg_date());
         String date = dateConvert.getdateconvert();

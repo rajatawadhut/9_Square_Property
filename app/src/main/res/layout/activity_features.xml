@@ -698,7 +698,7 @@
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <CheckBox
-                            android:text="24/7 Water"
+                            android:text="24 x 7 Water"
                             android:id="@+id/water24"
                             android:onClick="selectItem"
                             android:layout_width="wrap_content"

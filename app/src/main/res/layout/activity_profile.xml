@@ -255,11 +255,12 @@
                     android:layout_gravity="center"
                     android:text="Update Profile"
                     android:textAllCaps="false"
+                    android:padding="@dimen/dimen8dp"
                     android:textColor="@android:color/white"
                     android:background="@drawable/home_btn_bg"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:id="@+id/register"
-                    android:layout_width="150dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
 

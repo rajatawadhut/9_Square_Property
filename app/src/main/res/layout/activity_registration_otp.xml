@@ -71,7 +71,7 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:layout_margin="@dimen/dimen15dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">

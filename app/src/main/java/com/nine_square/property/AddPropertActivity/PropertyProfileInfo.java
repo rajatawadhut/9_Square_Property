@@ -1217,7 +1217,7 @@ public class PropertyProfileInfo extends AppCompatActivity {
 
                 //byersitem
 
-                if (byersitem.contains("24/7 Water")) {
+                if (byersitem.contains("24 x 7 Water")) {
                     byersitem1.add("1");
                 }
                 if (byersitem.contains("Visiter Parking Available")) {
@@ -1299,7 +1299,7 @@ public class PropertyProfileInfo extends AppCompatActivity {
                     lasttimespinget = "9";
                 }
 
-                if(lasttimespinget.contains("24/7")){
+                if(lasttimespinget.contains("24 x 7")){
                     lasttimespinget = "10";
                 }
                 if(lasttimespinget.contains("Select")){

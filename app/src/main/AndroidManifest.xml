@@ -73,7 +73,6 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
 
         <receiver
-            
             android:name=".Notification.AlarmNotificationReceiver"/>
 
         <activity

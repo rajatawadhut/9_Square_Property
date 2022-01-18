@@ -36,7 +36,7 @@ public class AnemitiesAdapter extends RecyclerView.Adapter<AnemitiesAdapter.Show
 
     @Override
     public void onBindViewHolder(@NonNull final ShowData holder, final int position) {
-        holder.text.setText(dataSet.get(position).getText());
+        holder.text.setText(dataSet.get(position).getText().trim());
     }
 
     @Override

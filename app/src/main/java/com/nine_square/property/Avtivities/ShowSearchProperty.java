@@ -1477,7 +1477,7 @@ public class ShowSearchProperty extends AppCompatActivity {
                             }
 
                             if(lasttimespinget.contains("10")){
-                                lasttimespinget = "24/7";
+                                lasttimespinget = "24 x 7";
                             }
 
 
@@ -1716,7 +1716,7 @@ public class ShowSearchProperty extends AppCompatActivity {
                             byersitem = object.getString("byersitem");
 
                             if (byersitem.contains("1")) {
-                                byersitem1.add("24/7 Water");
+                                byersitem1.add("24 x 7 Water");
                             }
                             if (byersitem.contains("2")) {
                                 byersitem1.add("Visiter Parking Available");
