@@ -54,7 +54,6 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -461,6 +460,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intsl = new Intent(MainActivity.this, SearchProperty.class);
                 intsl.putExtra("instance", "search");
                 startActivity(intsl);
+//                startActivity(new Intent(MainActivity.this, PaymentActivity.class));
             }
         });
 

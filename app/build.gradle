@@ -101,8 +101,11 @@ dependencies {
 
     implementation 'com.veinhorn.scrollgalleryview:picasso-loader:1.2.4'
 
-/*    //payu
-    implementation 'in.payu:payu-checkout-pro:1.7.6'*/
+    //payu
+    implementation 'com.payumoney.sdkui:plug-n-play:1.2.0'
+
+    implementation 'com.payumoney.core:payumoney-sdk:7.6.0'
+//    implementation 'com.payumoney.sdkui:plug-n-play:1.6.0'
     implementation "androidx.multidex:multidex:2.0.1"
 
 }

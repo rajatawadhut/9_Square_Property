@@ -22,7 +22,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup, usesCleartextTraffic">
-        <activity android:name=".Avtivities.PayuMoneyActivity"/>
+
+        <activity android:name=".Avtivities.PaymentActivity"/>
         <activity android:name=".Avtivities.ViewImageActivity" />
         <activity android:name=".Avtivities.BioMatricActivity" />
         <activity android:name=".Avtivities.TermsAndConditionActivity" />
@@ -33,6 +34,8 @@
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <activity
+            android:name="com.payumoney.sdkui.ui.activities.PayUmoneyActivity" />
         <activity
             android:name=".Avtivities.LoginThroughOtpActivity"
             android:theme="@style/AppThemeMaterial" />
