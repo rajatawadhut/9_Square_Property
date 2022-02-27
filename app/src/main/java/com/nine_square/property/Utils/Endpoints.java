@@ -80,5 +80,7 @@ public class Endpoints {
     public  static final String loginotp = base_url+"loginotp.php";
     public  static final String loginotpinsert = base_url+"loginotpinsert.php";
     public  static final String addUserSearchData = base_url+"usersearchdata.php";
+    public  static final String homeicon = base_url+"profilepic/home_icon.png";
+    public  static final String payment_detail = base_url+"payment_detail.php";
 
 }

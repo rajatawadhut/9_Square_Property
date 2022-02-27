@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/background_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Avtivities.Buyourservices">
@@ -33,13 +34,57 @@
             android:layout_height="match_parent">
 
 
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/cv_balance"
+                android:backgroundTint="@color/white"
+                app:cardElevation="4dp"
+                android:layout_margin="@dimen/dimen10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lbl_balance_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dimen15dp"
+                        android:paddingTop="@dimen/dimen10dp"
+                        android:paddingBottom="@dimen/dimen10dp"
+                        android:text="Available Balance is :"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/dimen18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/lbl_balance_available"
+                        android:padding="@dimen/dimen10dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/dimen18dp"
+                        android:textStyle="bold" />
+
+                    
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
             <RelativeLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="@color/graywhite"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp"
                     app:cardCornerRadius="10dp"
                     android:layout_width="match_parent"
@@ -64,17 +109,17 @@
                             android:layout_centerVertical="true"
                             android:layout_width="20dp"
                             android:layout_height="20dp"/>
+
                         <TextView
                             android:id="@+id/money"
-                            android:textStyle="bold"
-                            android:textSize="25dp"
-                            android:textAlignment="center"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:text="1500"
-                            android:textColor="@color/white"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="700"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
                         <TextView
                             android:layout_marginTop="25dp"
                             android:paddingBottom="15dp"
@@ -107,7 +152,7 @@
                         android:layout_height="wrap_content"/>
 
                         <Button
-                            android:id="@+id/btn_1500"
+                            android:id="@+id/btn_700"
                             android:layout_marginBottom="20dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="35dp"
@@ -131,7 +176,7 @@
                 android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="@color/graywhite"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp"
                     app:cardCornerRadius="10dp"
                     android:layout_width="match_parent"
@@ -156,17 +201,17 @@
                                 android:layout_centerVertical="true"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"/>
+
                             <TextView
                                 android:id="@+id/money2"
-                                android:textStyle="bold"
-                                android:textSize="25dp"
-                                android:textAlignment="center"
-                                android:layout_centerHorizontal="true"
-                                android:layout_centerVertical="true"
-                                android:text="2400"
-                                android:textColor="@color/white"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="1200"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_marginTop="25dp"
                                 android:paddingBottom="15dp"
@@ -199,7 +244,7 @@
                             android:layout_height="wrap_content"/>
 
                         <Button
-                            android:id="@+id/btn_2400"
+                            android:id="@+id/btn_1200"
                             android:layout_marginBottom="20dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="35dp"
@@ -227,7 +272,7 @@
                 android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="@color/graywhite"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp"
                     app:cardCornerRadius="10dp"
                     android:layout_width="match_parent"
@@ -252,17 +297,17 @@
                                 android:layout_centerVertical="true"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"/>
+
                             <TextView
                                 android:id="@+id/money3"
-                                android:textStyle="bold"
-                                android:textSize="25dp"
-                                android:textAlignment="center"
-                                android:layout_centerHorizontal="true"
-                                android:layout_centerVertical="true"
-                                android:text="3000"
-                                android:textColor="@color/white"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="2000"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_marginTop="25dp"
                                 android:paddingBottom="15dp"
@@ -295,7 +340,7 @@
                             android:layout_height="wrap_content"/>
 
                         <Button
-                            android:id="@+id/btn_3000"
+                            android:id="@+id/btn_2000"
                             android:layout_marginBottom="20dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="35dp"
