@@ -586,7 +586,7 @@ public class SettingActivity extends AppCompatActivity {
             nav.getMenu().getItem(7).setChecked(true);
         }
         footers.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        settingfooter1.setTextColor(Color.parseColor("#CA7441"));
+        settingfooter1.setTextColor(Color.parseColor("#FF9900"));
 
 
 

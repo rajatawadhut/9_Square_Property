@@ -2298,7 +2298,7 @@ public class ShortlistedActivity extends AppCompatActivity {
 
         }
         footershort.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        shortlistedfooter1.setTextColor(Color.parseColor("#CA7441"));
+        shortlistedfooter1.setTextColor(Color.parseColor("#FF9900"));
 
 
 //        footerh.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);

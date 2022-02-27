@@ -199,6 +199,7 @@
                             android:layout_height="wrap_content"/>
 
                         <Button
+                            android:id="@+id/btn_2400"
                             android:layout_marginBottom="20dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="35dp"
@@ -294,6 +295,7 @@
                             android:layout_height="wrap_content"/>
 
                         <Button
+                            android:id="@+id/btn_3000"
                             android:layout_marginBottom="20dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="35dp"

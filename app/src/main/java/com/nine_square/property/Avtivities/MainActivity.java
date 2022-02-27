@@ -6734,7 +6734,7 @@ public class MainActivity extends AppCompatActivity {
 //        footerl.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footershort.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
-        homeefooter1.setTextColor(Color.parseColor("#CA7441"));
+        homeefooter1.setTextColor(Color.parseColor("#ff9900"));
 //        latestfooter1.setTextColor(R.string.CodeColor);
 //        settingfooter1.setTextColor(R.string.CodeColor);
 //        shortlistedfooter1.setTextColor(R.string.CodeColor);
