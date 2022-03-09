@@ -119,8 +119,8 @@ public class LatestActivity extends AppCompatActivity {
             getrera="", mobile = "", reg_date = "", fname = "", lname = "", latlong= "", email ="";
 
 
-    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, settingfooter;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
     private CardView about,contact,privacy,moreapp,share;
 
     @Override
@@ -266,11 +266,11 @@ public class LatestActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlistedfooter = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
 
@@ -314,12 +314,13 @@ public class LatestActivity extends AppCompatActivity {
 
             }
         });
-        settingfooter.setOnClickListener(new OnClickListener() {
+        searchfooter.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent footorhome = new Intent(LatestActivity.this, SettingActivity.class);
-                footorhome.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(footorhome);            }
+                Intent intsl = new Intent(LatestActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
+            }
         });
 
         toggle = new ActionBarDrawerToggle(LatestActivity.this,drawer,toolbar,R.string.open,R.string.close);
@@ -2079,13 +2080,13 @@ public class LatestActivity extends AppCompatActivity {
 
         nav.getMenu().getItem(1).setChecked(true);
         footerl.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        latestfooter1.setTextColor(Color.parseColor("#FF9900"));
+        latestfooter1.setTextColor(Color.parseColor("#046008"));
 
 //        footerh.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
 //        footershort.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
 //        homeefooter1.setTextColor(Color.GRAY);
-//        settingfooter1.setTextColor(Color.GRAY);
+//        searchfooter1.setTextColor(Color.GRAY);
 //        shortlistedfooter1.setTextColor(Color.GRAY);
 
 

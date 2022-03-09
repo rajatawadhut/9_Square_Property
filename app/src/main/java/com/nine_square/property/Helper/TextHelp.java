@@ -59,8 +59,8 @@ public class TextHelp extends AppCompatActivity {
     LinearLayoutManager layoutManager;
 
 
-    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, settingfooter;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
 
 
 

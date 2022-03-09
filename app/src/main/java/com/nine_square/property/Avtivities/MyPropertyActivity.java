@@ -131,8 +131,8 @@ public class MyPropertyActivity extends AppCompatActivity {
             shortlistedvalue="", getrera="", mobile ="", reg_date = "", fname = "", lname = "", latlong="", email ="";
 
 
-    private LinearLayout homeefooter, latestfooter, shortlistedfooter, settingfooter;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, shortlistedfooter, searchfooter;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
     LinearLayout nodata;
 
 
@@ -286,11 +286,11 @@ public class MyPropertyActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlistedfooter = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
 
@@ -328,12 +328,13 @@ public class MyPropertyActivity extends AppCompatActivity {
                 footorprofile.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(footorprofile);             }
         });
-        settingfooter.setOnClickListener(new View.OnClickListener() {
+        searchfooter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent footorhome = new Intent(MyPropertyActivity.this, SettingActivity.class);
-                footorhome.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(footorhome);            }
+                Intent intsl = new Intent(MyPropertyActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
+            }
         });
 
         toggle = new ActionBarDrawerToggle(MyPropertyActivity.this,drawer,toolbar,R.string.open,R.string.close);
@@ -2079,7 +2080,7 @@ public class MyPropertyActivity extends AppCompatActivity {
 
 
 //            footers.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
-//            settingfooter1.setTextColor(Color.GRAY);
+//            searchfooter1.setTextColor(Color.GRAY);
 //
 //
 //

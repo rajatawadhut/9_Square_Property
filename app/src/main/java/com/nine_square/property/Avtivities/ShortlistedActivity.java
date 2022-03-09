@@ -85,8 +85,8 @@ public class ShortlistedActivity extends AppCompatActivity {
     LinearLayoutManager layoutManager;
 
 
-    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, settingfooter;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
 
     ArrayList<String> willing1 = new ArrayList<>();
     ArrayList<String> pgsuitablefor1 = new ArrayList<>();
@@ -281,11 +281,11 @@ public class ShortlistedActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlistedfooter = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
 
@@ -323,12 +323,13 @@ public class ShortlistedActivity extends AppCompatActivity {
 //                startActivity(footorprofile);
             }
         });
-        settingfooter.setOnClickListener(new View.OnClickListener() {
+        searchfooter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent footorprofile = new Intent(ShortlistedActivity.this, SettingActivity.class);
-                footorprofile.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(footorprofile);             }
+                Intent intsl = new Intent(ShortlistedActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
+            }
         });
 
         toggle = new ActionBarDrawerToggle(ShortlistedActivity.this,drawer,toolbar,R.string.open,R.string.close);
@@ -2298,7 +2299,7 @@ public class ShortlistedActivity extends AppCompatActivity {
 
         }
         footershort.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        shortlistedfooter1.setTextColor(Color.parseColor("#FF9900"));
+        shortlistedfooter1.setTextColor(Color.parseColor("#046008"));
 
 
 //        footerh.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
@@ -2306,7 +2307,7 @@ public class ShortlistedActivity extends AppCompatActivity {
 //        footers.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
 //        homeefooter1.setTextColor(Color.GRAY);
 //        latestfooter1.setTextColor(Color.GRAY);
-//        settingfooter1.setTextColor(Color.GRAY);
+//        searchfooter1.setTextColor(Color.GRAY);
 
     }
 

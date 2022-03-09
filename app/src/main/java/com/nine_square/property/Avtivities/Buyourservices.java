@@ -88,9 +88,9 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             public void onClick(View v) {
 
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("700");
+                    startpayment("1");
                     valueInt = 20;
-                    amountValue = "700";
+                    amountValue = "1";
                     
                 }else{
                     showmessage("Please login first!!");
@@ -104,9 +104,9 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             public void onClick(View v) {
 
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("1200");
+                    startpayment("2");
                     valueInt = 30;
-                    amountValue = "1200";
+                    amountValue = "2";
                     
                 }else{
                     showmessage("Please login first!!");
@@ -119,9 +119,9 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             @Override
             public void onClick(View v) {
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("2000");
+                    startpayment("3");
                     valueInt = 50;
-                    amountValue = "2000";
+                    amountValue = "3";
                     
                 }else{
                     showmessage("Please login first!!");

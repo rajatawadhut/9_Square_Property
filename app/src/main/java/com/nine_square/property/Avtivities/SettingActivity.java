@@ -65,8 +65,8 @@ public class SettingActivity extends AppCompatActivity {
     private Intent intent;
 
 
-    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, settingfooter;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
 
     CardView about,contact,privacy,moreapp,share,terms;
 
@@ -169,11 +169,11 @@ public class SettingActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlistedfooter = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
 
@@ -282,10 +282,12 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        settingfooter.setOnClickListener(new View.OnClickListener() {
+        searchfooter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(LatestActivity.this, "Setting", Toast.LENGTH_SHORT).show();
+                Intent intsl = new Intent(SettingActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
             }
         });
 
@@ -586,7 +588,7 @@ public class SettingActivity extends AppCompatActivity {
             nav.getMenu().getItem(7).setChecked(true);
         }
         footers.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        settingfooter1.setTextColor(Color.parseColor("#FF9900"));
+        searchfooter1.setTextColor(Color.parseColor("#046008"));
 
 
 

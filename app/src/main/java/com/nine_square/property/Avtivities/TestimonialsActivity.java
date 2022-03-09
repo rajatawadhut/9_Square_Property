@@ -78,8 +78,8 @@ public class TestimonialsActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     ImageView footerh,footerl, footershort, footers;
 
-    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, settingfooter, footer;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private LinearLayout homeefooter, latestfooter, searchfooter, shortlistedfooter, footer;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
     String userreviewid="", userreview="", userrating="", valueid="";
     int a = 1;
 
@@ -248,11 +248,11 @@ public class TestimonialsActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlistedfooter = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
 
@@ -290,12 +290,13 @@ public class TestimonialsActivity extends AppCompatActivity {
                 startActivity(footorprofile);
             }
         });
-        settingfooter.setOnClickListener(new View.OnClickListener() {
+        searchfooter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent footorprofile = new Intent(TestimonialsActivity.this, SettingActivity.class);
-                footorprofile.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(footorprofile);             }
+                Intent intsl = new Intent(TestimonialsActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
+            }
         });
 
 
@@ -745,7 +746,7 @@ public class TestimonialsActivity extends AppCompatActivity {
 
 
 //        footers.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
-//        settingfooter1.setTextColor(Color.GRAY);
+//        searchfooter1.setTextColor(Color.GRAY);
 //
 //
 //

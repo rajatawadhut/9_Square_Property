@@ -124,9 +124,9 @@ public class MainActivity extends AppCompatActivity {
     private List<PgDataModel> pgDataModels;
     private PgAdapter pgAdapter;
 
-    private LinearLayout homeefooter, latestfooter, shortlisted, settingfooter, postproperty;
+    private LinearLayout homeefooter, latestfooter, shortlisted, searchfooter, postproperty;
     ImageView footerh,footerl, footerp, footers, footershort;
-    private TextView homeefooter1, latestfooter1, settingfooter1, shortlistedfooter1;
+    private TextView homeefooter1, latestfooter1, searchfooter1, shortlistedfooter1;
 
     private ViewPager viewPager, advertisement;
     RecyclerView recyclerViewsell, recyclerViewrent, recyclerViewpg;
@@ -437,11 +437,11 @@ public class MainActivity extends AppCompatActivity {
         homeefooter = findViewById(R.id.homefooter);
         latestfooter = findViewById(R.id.latestfooter);
         shortlisted = findViewById(R.id.shortlistedfooter);
-        settingfooter = findViewById(R.id.settingfooter);
+        searchfooter = findViewById(R.id.searchfooter);
 
         homeefooter1 = findViewById(R.id.homefooter1);
         latestfooter1 = findViewById(R.id.latestfooter1);
-        settingfooter1 = findViewById(R.id.settingfooter1);
+        searchfooter1 = findViewById(R.id.searchfooter1);
         shortlistedfooter1 = findViewById(R.id.shortlistedfooter1);
 
         footerh = findViewById(R.id.footerh);
@@ -536,12 +536,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        settingfooter.setOnClickListener(new View.OnClickListener() {
+        searchfooter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent footorlatest = new Intent(MainActivity.this, SettingActivity.class);
-                footorlatest.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(footorlatest);                }
+                Intent intsl = new Intent(MainActivity.this, SearchProperty.class);
+                intsl.putExtra("instance", "search");
+                startActivity(intsl);
+            }
         });
 
 
@@ -6734,9 +6735,9 @@ public class MainActivity extends AppCompatActivity {
 //        footerl.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footershort.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
-        homeefooter1.setTextColor(Color.parseColor("#ff9900"));
+        homeefooter1.setTextColor(Color.parseColor("#046008"));
 //        latestfooter1.setTextColor(R.string.CodeColor);
-//        settingfooter1.setTextColor(R.string.CodeColor);
+//        searchfooter1.setTextColor(R.string.CodeColor);
 //        shortlistedfooter1.setTextColor(R.string.CodeColor);
     }
 

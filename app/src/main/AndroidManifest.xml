@@ -45,12 +45,14 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAYMmc5XN_JQpXsedsndxTsJrJm3C1g5OM" />
+
         <!--<meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_M9Ct3avJ3HN4XL" />-->
+            android:value="rzp_test_sFvWgD19j8g8M8" /> -->
+
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_sFvWgD19j8g8M8" />
+            android:value="rzp_live_c2euLuyrG9aor4" />
 
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
