@@ -111,12 +111,12 @@
         </androidx.cardview.widget.CardView>
 
 
-        <ImageView
+        <!--<ImageView
             android:layout_marginTop="-15dp"
             android:background="@color/white"
             android:src="@drawable/ic_property_banner"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen150dp"/>
+            android:layout_height="@dimen/dimen150dp"/>-->
 
 
 
@@ -164,7 +164,7 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/border_background"
                     android:scaleType="fitXY"
-                    android:src="@drawable/post_property" />
+                    android:src="@drawable/ic_buy_rent_sell_post" />
 
 
 
@@ -300,7 +300,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/border_background"
                         android:scaleType="fitXY"
-                        android:src="@drawable/post1" />
+                        android:src="@drawable/ic_rent_buy" />
 
                     <!--                <ImageView-->
                     <!--                    android:layout_weight="1"-->
@@ -395,7 +395,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/border_background"
                         android:scaleType="fitXY"
-                        android:src="@drawable/make1" />
+                        android:src="@drawable/ic_make_your_deal_faster" />
 
                     <!--                <ImageView-->
                     <!--                    android:layout_weight="1"-->
@@ -499,7 +499,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/border_background"
                         android:scaleType="fitXY"
-                        android:src="@drawable/why1" />
+                        android:src="@drawable/ic_make_deal" />
 
                     <!--                <ImageView-->
                     <!--                    android:layout_weight="1"-->

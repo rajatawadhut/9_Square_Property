@@ -88,12 +88,14 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             public void onClick(View v) {
 
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("1");
-                    valueInt = 20;
-                    amountValue = "1";
+                    startpayment("700");
+                    valueInt = 4;
+                    amountValue = "700";
                     
                 }else{
                     showmessage("Please login first!!");
+                    startActivity(new Intent(Buyourservices.this, LoginActivity.class));
+                    finish();
                 }
 
             }
@@ -104,12 +106,14 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             public void onClick(View v) {
 
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("2");
-                    valueInt = 30;
-                    amountValue = "2";
+                    startpayment("1200");
+                    valueInt = 8;
+                    amountValue = "1200";
                     
                 }else{
                     showmessage("Please login first!!");
+                    startActivity(new Intent(Buyourservices.this, LoginActivity.class));
+                    finish();
                 }
 
             }
@@ -119,12 +123,14 @@ public class Buyourservices extends AppCompatActivity implements PaymentResultLi
             @Override
             public void onClick(View v) {
                 if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
-                    startpayment("3");
-                    valueInt = 50;
-                    amountValue = "3";
+                    startpayment("2000");
+                    valueInt = 12;
+                    amountValue = "2000";
                     
                 }else{
                     showmessage("Please login first!!");
+                    startActivity(new Intent(Buyourservices.this, LoginActivity.class));
+                    finish();
                 }
             }
         });

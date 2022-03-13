@@ -596,7 +596,11 @@ public class MainActivity extends AppCompatActivity {
         post_pro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
+
+                Intent intebuy = new Intent(MainActivity.this, SearchProperty.class);
+                intebuy.putExtra("instance", "search");
+                startActivity(intebuy);
+                /*if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
                     ListingData.getInstance(getApplicationContext()).Logout();
                     ListingData.getInstance(getApplicationContext()).setinstrance("Add");
                     startActivity(new Intent(MainActivity.this, BasicDetails.class));
@@ -604,7 +608,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
 
-                }
+                }*/
             }
         });
         feelfree.setOnClickListener(new View.OnClickListener() {
@@ -6731,11 +6735,11 @@ public class MainActivity extends AppCompatActivity {
 
         // to check current activity in the navigation drawer
         nav.getMenu().getItem(0).setChecked(true);
-        footerh.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
+        footerh.setColorFilter(Color.GREEN, PorterDuff.Mode.SRC_IN);
 //        footerl.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footers.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
 //        footershort.setColorFilter(getResources().getColor(R.color.gray1), PorterDuff.Mode.SRC_IN);
-        homeefooter1.setTextColor(Color.parseColor("#046008"));
+        homeefooter1.setTextColor(Color.GREEN);
 //        latestfooter1.setTextColor(R.string.CodeColor);
 //        searchfooter1.setTextColor(R.string.CodeColor);
 //        shortlistedfooter1.setTextColor(R.string.CodeColor);

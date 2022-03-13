@@ -431,34 +431,6 @@
                                 </LinearLayout>
 
 
-                                <LinearLayout
-                                    android:id="@+id/addresslayout9"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dimen10dp"
-                                    android:orientation="vertical"
-                                    android:paddingLeft="@dimen/dimen10dp">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="Address"
-                                        android:textColor="@color/gray"
-                                        android:textSize="@dimen/dimen12dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/address"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="Janki Nagar Nagpur"
-                                        android:textColor="@color/black2"
-                                        android:textSize="@dimen/textsize14sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
                             </LinearLayout>
 
                             <LinearLayout
@@ -526,7 +498,40 @@
 
                                 </LinearLayout>
                             </LinearLayout>
+
+
                         </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/addresslayout9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen10dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/dimen10dp"
+                            android:paddingBottom="@dimen/dimen10dp"
+                            android:paddingRight="@dimen/dimen10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Address"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/dimen12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Janki Nagar Nagpur"
+                                android:textColor="@color/black2"
+                                android:textSize="@dimen/textsize14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
 
 

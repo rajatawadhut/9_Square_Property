@@ -2298,8 +2298,8 @@ public class ShortlistedActivity extends AppCompatActivity {
             nav.getMenu().getItem(5).setChecked(true);
 
         }
-        footershort.setColorFilter(getResources().getColor(R.color.orange), PorterDuff.Mode.SRC_IN);
-        shortlistedfooter1.setTextColor(Color.parseColor("#046008"));
+        footershort.setColorFilter(Color.GREEN, PorterDuff.Mode.SRC_IN);
+        shortlistedfooter1.setTextColor(Color.GREEN);
 
 
 //        footerh.setColorFilter(getResources().getColor(R.color.gray), PorterDuff.Mode.SRC_IN);
